@@ -1,5 +1,5 @@
 
-# * https://replit.com/@LucasFeliciano0/MinhaAPI#main.py
+# * Site onde foi feito a API com flask: https://replit.com/@LucasFeliciano0/MinhaAPI#main.py
 
 import pandas as pd
 from flask import Flask, jsonify
@@ -16,7 +16,7 @@ def homepage():
 # api vai calcular o total de vendas
 @app.route('/pegar_vendas')
 def pegar_vendas():
-  tabela = pd.read_csv('12-18 - Criando API no Python.csv')  
+  tabela = pd.read_csv('Criando_API_no_Python.csv')  
   total_vendas = tabela['Vendas'].sum()
   resposta = {'total_vendas': total_vendas}
   return jsonify(resposta)
