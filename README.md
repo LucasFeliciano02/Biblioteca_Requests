@@ -1,2 +1,2 @@
 # Biblioteca Requests
-- Requisicoes rest
+- Requisicoes rest com exemplos reais
