@@ -1,2 +1,2 @@
 # Biblioteca Requests
-- Requisicoes rest de estudo  
+- Requisicoes rest
