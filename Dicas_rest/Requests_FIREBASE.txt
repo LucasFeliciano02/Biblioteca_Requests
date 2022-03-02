@@ -1,0 +1,85 @@
+"
+import requests  # importar a biblioteca primeiro
+
+https://console.firebase.google.com/project/teste-421f4/database/teste-421f4-default-rtdb/data
+
+"""
+- API = APLICATION PROGRAMING INTERFACE  - programa criado para vc conseguir acessar algum sistema e trocar informacoes,
+acessar um http e pegar informações que vem com essas apis
+
+- Uma API Intermediaria feita pela empresa(google, instagram, facebook), ha regras que garantem que eu nao consiga ter acesso ao banco de dados direto,
+só consigo ter acesso as informações que a api dele faz pra mim
+
+- API nada mais é que um programa, microsite que a empresa(instagram por ex) cria pra pegar informações do banco de dados e passar
+essas informações pra quem estiver pedindo pra ele, e essa api seta qual informações podem pedir, quem pode pedir, (gerencia)
+e ele garante que vc nao tenha acesso a todo o banco de dados do instagram mas sim so a informação que o instagram permite voce 
+ter acesso
+
+- JSON  =  Comunicação (formato da informação, txt, pdf), eu peço a informação pra api e a api me da essa info como resposta
+  é um dicionario python onde dentro desse dicionario tem as informações que aquela api esta te dando como resposta 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SITE USADO = FIREBASE
+
+APIs  = SE USA MUITO A BIBLIOTECA REQUEST
+
+REQUISIÇÃO = 4
+
+1° = GET  =  PEGAR INFORMAÇÕES
+2° = POST  =  CRIAR, INSERIR INFORMAÇÕES 
+3° = PATCH  =  EDITAR, ATUALIZAR INFORMAÇÕES
+5° = DELETE  =  DELETAR INFORMAÇÕES
+
+EX DE UM 'BANCO DE DADOS'
+
+-> VC PODE - "PEGAR|GET", - "CRIAR|POST", - "Editar|PATCH", - "DELETE" INFORMAÇÕES DO BANCO DE DADOS
+E PODE-SE FAZER ISSO COM UM SITE
+
+-> PODE-SE FAZER ESSAS COISAS DESDE QUE O CRIADOR DA API DEIXE, ENTAO É LIMITADO A NAO SER QUE SEJA ALGO SEU
+
+REQUISIÇOES ESTAO EM FORMATO (JSON)
+
+JSON = DICIONARIO
+
+
+- FIREBASE  =  BANCO DE DADOS ONLINE DA GOOGLE
+EM QUE DA PRA SE COMUNICAR POR MEIO DE REQUISIÇÕES (GET, POST, PATCH, DELETE)    
+
+FINAL DO LINK COLOCAR SEMPRE, POIS ELE EXIGE  =  .json
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+QUANTO É CRIAÇÃO (POST), API PADRAO, EX: ('https://teste-421f4-default-rtdb.firebaseio.com/.json', data=informacoes)
+QUANDO É EDIÇÃO(PATCH), API CRIADA PELO POST, EX: ('https://teste-421f4-default-rtdb.firebaseio.com/-MuX4e89WDIChkiMXYsP.json')
+NAO SE PODE TER UM USUARIO DENTRO DE OUTRO USUARIO NO BANCO DE DADOS
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+POST E PATCH  =  PRECISA COLOCAR AS INFORMAÇÕES POIS ELE TEM QUE SABER QUAIS INFORMAÇÕES ELE VAI CRIAR(POST) OU EDITAR(PATCH)
+
+1° GET - RECEBE A INFORMAÇÃO CONTIDA NA API
+
+
+
+2° POST - CRIA UMA INFORMAÇÃO = QUANDO ESTA FAZENDO UM METODO 'POST' OU UM MÉTODO PATCH, VC PRECISA PASSAR DENTRO DA REQUISIÇÃO, ALGUMA INFORMAÇÃO QUE TU QUER CRIAR
+
+
+-> AS INFORMAÇÕES DEVEM SER UM DICIONARIO PYTHON QUE ESTÁ EM FORMATO DE TEXTO
+
+ EX: informacoes_POST  =  '{"Nome": "Claudio"}'
+
+ APARECE UM ID ALEATORIO NO BANCO DE DADOS CRIADO PELO FIREBASE
+
+
+
+ 3° PATCH  - ATUALIZA UMA INFORMAÇÃO
+
+ -> ENVIA DICIONARIO EDITADO
+ -> TEM QUE ESPECIFICAR QUEM QUER EDITAR COM BASE NAS INFORMAÇÕES DA BASE DE DADOS 
+ -> PEGAR O LINK DO ITEM  (-MuX43MXZoX3BvO0hwiM) POR EXEMPLO
+
+
+ 4° DELETE  =  ENVIA NENHUMA INFORMAÇÃO ADICIONAL
+
+
