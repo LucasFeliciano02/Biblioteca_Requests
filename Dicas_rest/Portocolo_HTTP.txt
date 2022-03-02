@@ -1,0 +1,40 @@
+
+• HTTP = (Hyper Text Transfer Protocol)
+- Hyper Text = é um texto com links associados, lincados
+- Documentos escritos em html e textos lincados, podendo fazer referencia a outros formatos de arquivo, como css, js
+
+
+• HTTP caracteristicas
+- camada de aplicação de mais alto nivel
+- Stateless  =  Nao tem estado, toda conexao é como se fosse a primeira vez
+- Cliente-Servidor  =  requisição e resposta, mando uma requisição pro servidor, baseado na URL com um conjunto de parametros, faço a requisição e recebo algo como resposta
+  essa resposta pode ser um arquivo txt, json, html, video
+  Cliente manda uma requisição a partir de uma url mais um conjunto de parametros, headers, cookies e essa requisição é atendida por um servidor
+  dai o cliente é quem fez a requisicao e o servidor é quem manda a resposta beseada na requisição feita
+- Esse protocolo opera em cima de TCP/IP 
+
+
+• FLUXO DA CONEXÃO HTTP 
+
+1) Usuario/cliente informa a URL (www.google.com.br) 
+2) Browser gera a requisição na raiz usando (GET / HTTP /1.1 ) para o (Host: www.google.com.br)
+3) Uma vez que essa requisicao é enviada e chega no servidor de destino
+   tem um servidor gerando uma resposta = (HTTP/1.1 200 OK, content-Type, date, connection: close, content-lenght: 438)
+4) Browser exibe a página ao chegar a resposta e o renderiza
+
+
+• 8 Métodos suportados pelo protocolo HTTP  = GET, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT, HEAD  
+
+
+• Requisição e resposta
+- Cliente envia uma requisição pro servidor usando a url + um conjunto de parametros e servidor envia como resposta para o cliente: HTML, CSS, JS, IMAGENS, VIDEOS, ...
+
+
+• Grupos de Status HTTP
+
+- 1xx - informação
+- 2xx - Sucesso
+- 3xx - Redirecionamento
+- 4xx - Erro no CLIENTE, vc demandou uma requisição invalida com parametros invalidos  
+- 404 - vc fez uma requisição para um endereço que não tem nenhum tipo de serviço atendendo, nenhuma pagina associada, pois o cliente demandou uma requisição invalida
+- 5xx - Erro no SERVIDOR, banco de dados fora do ar, erro de codigo do servidor para atender requisição
