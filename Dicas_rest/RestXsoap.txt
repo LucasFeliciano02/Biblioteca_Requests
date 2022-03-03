@@ -1,0 +1,30 @@
+Web Service sao softwares que disponibilizam informação pela internet
+O conjunto de comunicações que pode-se fazer com esse web service é chamada de API
+E ao planejar esse conjunto de comunicações, a arquitetura dessas apis escolhemos se vai ser REST OU SOAP
+
+protocolo = conjunto de regras, simbolos de como se fazer algo, ex de uma linguagem de cominicação
+
+OVERHEAD = Quantidade de trabalho que vc tem que fazer a mais para mandar aquela msg, como bits, rede, recursos
+
+SOAP = (simple object access protocol), mais antigo, é um protocolo, conjunto de regras rigido de como se fazer algo, de como se comunicar com as apis 
+É um protocolo de como a gente padroniza as mensagens de se comunicar com a nossa api, web service, mas esse protocolo utiliza outros protocolos de transporte pra se comunicar e transitar na rede
+sempre usa o XML para mandar e receber as mensagens, é padronizado
+tem formas de lidar com erro, tem envelope que ao mandar a mensagem ela é envelopada com um conjunto de simbolos especificos e sempre ao mandar uma msg ao servidor, usamos o metodo POST
+é independente da linguagem de programação, plataforma e do protocolo de transporte em uso, como HTTML, FTP ou qualquer outro protocolo de comunicação 
+(É um protocolo, padronizado, regras rígidas de como se comunicar com apis, sempre em XML, pode usar qualquer protocolo de transporte, mas em geral usa o HTTP e sempre o metodo POST para mandar pedidos para o servidor)
+usa apenas POST para mandar as requisições
+
+- Ao olhar o trabalho que se tem ao mandar e receber, a qtd de bits que usa, espaço, rede, a qtd de recursos usados para mandar uma msg SOAP é maior que a qtd de recursos que temos para enviar e receber uma msg REST
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+REST = (Representation State Transfer), é uma forma mais leve de se comunicar com a internet, nos traz regras mais leves, menos rígidas, menos padronizado, mais flexivel
+- É um estilo arquitetural e não um protocolo
+- Quando é respeitado as regras desse estilo arquitetural chamamos de (Api restFul)
+- Tem uma interface uniforme que é o coração do rest
+- O rest usa os metodos, verbos específicos do HTTP para se comunicar, como GET, POST, PUT, PATCH, DELET 
+- 70% das APIs públicas são REST
+- mais facil de ser usado
+- Pode ser JSON, XML, CSV, TXT
+- Os dados estao na propria msg
